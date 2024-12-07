@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!-- saved from url=(0162)https://codepen.io/EricPorter/embed/BaoWYrp?height=350&theme-id=dark&default-tab=result&user=EricPorter&slug-hash=BaoWYrp&pen-title=StarsMatchGame&name=cp_embed_6 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - StarsMatchGame</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="TOiQ0WjEpGT4Bfm60i7af6n2zAdfYEyv4bXJEkcnu5qTeAIOPNkYigtRgKYSmVoCCkeXzoyPQXbV3e+IUW9fcQ==">
+
+  <link rel="stylesheet" media="all" href="./embed-ad67fe72acfeb011f9e0361df99b8dd024a995b725b6034694d1529c4f6bd5ca.css">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #111111;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #eeeeee;
+      background-color: #333333;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #555555;
+      color: #eeeeee;
+      box-shadow: inset 0px 3px #797979;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #eeeeee;
+    }
+
+    .embed-nav svg {
+      stroke: #eeeeee !important;
+    }
+  </style>
+
+  <link rel="stylesheet" media="all" href="./twilight-123214b13ed2699670d09785cc8ac3cbc46ebf6eeb43e268f0bb1a1e07c69684.css">
+
+<style id="mttstyle">
+    #mttContainer {
+      left: 0 !important;
+      top: 0 !important;
+      width: 1000px !important;
+      margin: 0px !important;
+      margin-left: -500px !important;
+      position: fixed !important;
+      z-index: 100000200 !important;
+      background: none !important;
+      pointer-events: none !important;
+      display: inline-block !important;
+      visibility: visible  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"], .tippy-content *{
+      font-size: 18px  !important;
+      text-align: center !important;
+      overflow-wrap: break-word !important;
+      color: #ffffffff !important;
+      font-family: 
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"]{
+      max-width: 200px  !important;
+      backdrop-filter: blur(6px) !important;
+      background-color: #00000080 !important;
+      border: 1px solid #ffffff00; 
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    [data-tippy-root] {
+      display: inline-block !important;
+      visibility: visible  !important;
+      position: absolute !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before { 
+      border-top-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+      border-bottom-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+      border-left-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+      border-right-color: #00000080 !important;
+    }
+    .mtt-highlight{
+      background-color: #21dc6d40  !important;
+      position: absolute !important;   
+      z-index: 100000100 !important;
+      pointer-events: none !important;
+      display: inline !important;
+      border-radius: 3px !important;
+    }
+    .mtt-image{
+      width: 180px  !important;
+      border-radius: 3px !important;
+    }
+    .ocr_text_div{
+      position: absolute;
+      opacity: 0.5;
+      color: transparent !important;
+      border: 2px solid CornflowerBlue;
+      background: none !important;
+      border-radius: 3px !important;
+    }</style><style id="mttstyleSubtitle">
+    #ytp-caption-window-container .ytp-caption-segment {
+      cursor: text !important;
+      user-select: text !important;
+      font-family: 
+      -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif  !important;
+    }
+    .caption-visual-line{
+      display: flex  !important;
+      align-items: stretch  !important;
+    }
+    .captions-text .caption-visual-line:first-of-type:after {
+      content: '⣿⣿';
+      border-radius: 3px !important;
+      color: white !important;
+      background: transparent !important;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      display: inline-block;
+      vertical-align: top;
+      opacity:0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    .ytp-caption-segment{
+      color: white !important;
+      text-shadow: 1px 1px 2px black !important;
+      background:transparent  !important;
+    }
+    .captions-text:hover .caption-visual-line:first-of-type:after {
+      opacity:1;
+    }
+    .ytp-pause-overlay {
+      display: none !important;
+    }
+    .ytp-expand-pause-overlay .caption-window {
+      display: block !important;
+    }
+  </style></head>
+
+<body id="the-body" style="border: 1px solid #666666; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#css-box" role="button" aria-pressed="false">
+              CSS
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#js-box" role="button" aria-pressed="false">
+              Babel
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/DinaTAKLIT/pen/BaoWYrp" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"root"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-qualifier">.game</span> {
+  <span class="cm-property">max-width</span>: <span class="cm-number">500px</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-atom">auto</span>;
+}
+
+<span class="cm-qualifier">.body</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+}
+
+<span class="cm-qualifier">.help</span> {
+  <span class="cm-property">color</span>: <span class="cm-atom">#666</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">10px</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-qualifier">.left</span> {
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">border</span>: <span class="cm-atom">thin</span> <span class="cm-atom">solid</span> <span class="cm-atom">#ddd</span>;
+}
+
+<span class="cm-qualifier">.right</span> {
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">10px</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">border</span>: <span class="cm-atom">thin</span> <span class="cm-atom">solid</span> <span class="cm-atom">#ddd</span>;
+}
+
+<span class="cm-qualifier">.star</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-number">15px</span>;
+}
+
+<span class="cm-qualifier">.star</span>:<span class="cm-variable-3">after</span> {
+  <span class="cm-property">content</span>: <span class="cm-string">"\2605"</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">45px</span>;
+}
+
+<span class="cm-qualifier">.number</span> {
+  <span class="cm-property">background-color</span>: <span class="cm-atom">#eee</span>;
+  <span class="cm-property">border</span>: <span class="cm-atom">thin</span> <span class="cm-atom">solid</span> <span class="cm-atom">#ddd</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">45px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">45px</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">10px</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">25px</span>;
+}
+
+<span class="cm-qualifier">.number</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.number</span>:<span class="cm-variable-3">active</span> {
+  <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">border</span>: <span class="cm-atom">thin</span> <span class="cm-atom">solid</span> <span class="cm-atom">#ddd</span>;
+}
+
+<span class="cm-qualifier">.timer</span> {
+  <span class="cm-property">color</span>: <span class="cm-atom">#666</span>;
+  <span class="cm-property">margin-top</span>: <span class="cm-number">3px</span>;
+  <span class="cm-property">margin-left</span>: <span class="cm-number">3px</span>;
+}
+
+<span class="cm-qualifier">.game-done</span> <span class="cm-qualifier">.message</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">250%</span>;
+  <span class="cm-property">font-weight</span>: <span class="cm-atom">bold</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">15px</span>;
+}</code></pre>
+
+        </div>
+
+
+
+        <div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="jsx" id="actual-js-code" class=" cm-s-default"><span class="cm-keyword">const</span> <span class="cm-def">StarsDisplay</span> <span class="cm-operator">=</span> (<span class="cm-def">props</span>) <span class="cm-operator">=&gt;</span> (
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag cm-bracket">&gt;</span>
+    {<span class="cm-variable">utils</span>.<span class="cm-property">range</span>(<span class="cm-number">1</span>, <span class="cm-variable">props</span>.<span class="cm-property">count</span>).<span class="cm-property">map</span>(<span class="cm-variable">starId</span> <span class="cm-operator">=&gt;</span> (
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">key</span>={<span class="cm-variable">starId</span>} <span class="cm-attribute">className</span>=<span class="cm-string">"star"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+    ))}
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-bracket">&gt;</span>
+);
+
+<span class="cm-keyword">const</span> <span class="cm-def">PlayNumber</span> <span class="cm-operator">=</span> (<span class="cm-def">props</span>) <span class="cm-operator">=&gt;</span> (
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span>
+    <span class="cm-attribute">className</span>=<span class="cm-string">"number"</span>
+    <span class="cm-attribute">style</span>={{<span class="cm-variable">backgroundColor</span>: <span class="cm-variable">colors</span>[<span class="cm-variable">props</span>.<span class="cm-property">status</span>]}}
+    <span class="cm-attribute">onClick</span>={() <span class="cm-operator">=&gt;</span> <span class="cm-variable">props</span>.<span class="cm-property">onClick</span>(<span class="cm-variable">props</span>.<span class="cm-property">number</span>, <span class="cm-variable">props</span>.<span class="cm-property">status</span>)}
+  <span class="cm-tag cm-bracket">&gt;</span>
+    {<span class="cm-variable">props</span>.<span class="cm-property">number</span>}
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+);
+
+<span class="cm-keyword">const</span> <span class="cm-def">PlayAgain</span> <span class="cm-operator">=</span> (<span class="cm-def">props</span>) <span class="cm-operator">=&gt;</span> (
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"game-done"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> 
+      <span class="cm-attribute">className</span>=<span class="cm-string">"message"</span>
+      <span class="cm-attribute">style</span>={{ <span class="cm-variable">color</span>: <span class="cm-variable">props</span>.<span class="cm-property">gameStatus</span> <span class="cm-operator">===</span> <span class="cm-string">'lost'</span> <span class="cm-operator">?</span> <span class="cm-string">'red'</span> : <span class="cm-string">'green'</span>}}
+    <span class="cm-tag cm-bracket">&gt;</span>
+      {<span class="cm-variable">props</span>.<span class="cm-property">gameStatus</span> <span class="cm-operator">===</span> <span class="cm-string">'lost'</span> <span class="cm-operator">?</span> <span class="cm-string">'Game Over'</span> : <span class="cm-string">'Nice'</span>}
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">onClick</span>={<span class="cm-variable">props</span>.<span class="cm-property">onClick</span>}<span class="cm-tag cm-bracket">&gt;</span>Play Again<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+);
+
+<span class="cm-keyword">const</span> <span class="cm-def">useGameState</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> {
+  <span class="cm-keyword">const</span> [<span class="cm-def">stars</span>, <span class="cm-def">setStars</span>] <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">useState</span>(<span class="cm-variable">utils</span>.<span class="cm-property">random</span>(<span class="cm-number">1</span>, <span class="cm-number">9</span>));
+  <span class="cm-keyword">const</span> [<span class="cm-def">availableNums</span>, <span class="cm-def">setAvailableNums</span>] <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">useState</span>(<span class="cm-variable">utils</span>.<span class="cm-property">range</span>(<span class="cm-number">1</span>, <span class="cm-number">9</span>));
+  <span class="cm-keyword">const</span> [<span class="cm-def">candidateNums</span>, <span class="cm-def">setCandidateNums</span>] <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">useState</span>([]);
+  <span class="cm-keyword">const</span> [<span class="cm-def">secondsLeft</span>, <span class="cm-def">setSecondsLeft</span>] <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">useState</span>(<span class="cm-number">10</span>);
+
+  <span class="cm-variable">React</span>.<span class="cm-property">useEffect</span>(() <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">if</span> (<span class="cm-variable-2">secondsLeft</span> <span class="cm-operator">&gt;</span> <span class="cm-number">0</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">availableNums</span>.<span class="cm-property">length</span> <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>) {
+      <span class="cm-keyword">const</span> <span class="cm-def">timerId</span> <span class="cm-operator">=</span> <span class="cm-variable">setTimeout</span>(() <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">setSecondsLeft</span>(<span class="cm-variable-2">secondsLeft</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>), <span class="cm-number">1000</span>);
+      <span class="cm-keyword">return</span> () <span class="cm-operator">=&gt;</span> <span class="cm-variable">clearTimeout</span>(<span class="cm-variable-2">timerId</span>);
+    }
+  });
+
+  <span class="cm-keyword">const</span> <span class="cm-def">setGameState</span> <span class="cm-operator">=</span> (<span class="cm-def">newCandidateNums</span>) <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">if</span> (<span class="cm-variable">utils</span>.<span class="cm-property">sum</span>(<span class="cm-variable-2">newCandidateNums</span>) <span class="cm-operator">!==</span> <span class="cm-variable-2">stars</span>) {
+      <span class="cm-variable-2">setCandidateNums</span>(<span class="cm-variable-2">newCandidateNums</span>);
+    } <span class="cm-keyword">else</span> {
+      <span class="cm-keyword">const</span> <span class="cm-def">newAvailableNums</span> <span class="cm-operator">=</span> <span class="cm-variable-2">availableNums</span>.<span class="cm-property">filter</span>(
+        <span class="cm-def">n</span> <span class="cm-operator">=&gt;</span> <span class="cm-operator">!</span><span class="cm-variable-2">newCandidateNums</span>.<span class="cm-property">includes</span>(<span class="cm-variable-2">n</span>)
+      );
+      <span class="cm-variable-2">setStars</span>(<span class="cm-variable">utils</span>.<span class="cm-property">randomSumIn</span>(<span class="cm-variable-2">newAvailableNums</span>, <span class="cm-number">9</span>));
+      <span class="cm-variable-2">setAvailableNums</span>(<span class="cm-variable-2">newAvailableNums</span>);
+      <span class="cm-variable-2">setCandidateNums</span>([]);
+    }
+  };
+
+  <span class="cm-keyword">return</span> { <span class="cm-property">stars</span>, <span class="cm-property">availableNums</span>, <span class="cm-property">candidateNums</span>, <span class="cm-property">secondsLeft</span>, <span class="cm-property">setGameState</span> };
+};
+
+<span class="cm-keyword">const</span> <span class="cm-def">Game</span> <span class="cm-operator">=</span> (<span class="cm-def">props</span>) <span class="cm-operator">=&gt;</span> {
+  <span class="cm-keyword">const</span> {
+    <span class="cm-def">stars</span>,
+    <span class="cm-def">availableNums</span>,
+    <span class="cm-def">candidateNums</span>,
+    <span class="cm-def">secondsLeft</span>,
+    <span class="cm-def">setGameState</span>,
+  } <span class="cm-operator">=</span> <span class="cm-variable">useGameState</span>();
+
+  <span class="cm-keyword">const</span> <span class="cm-def">candidatesAreWrong</span> <span class="cm-operator">=</span> <span class="cm-variable">utils</span>.<span class="cm-property">sum</span>(<span class="cm-variable-2">candidateNums</span>) <span class="cm-operator">&gt;</span> <span class="cm-variable-2">stars</span>;
+  <span class="cm-keyword">const</span> <span class="cm-def">gameStatus</span> <span class="cm-operator">=</span> <span class="cm-variable-2">availableNums</span>.<span class="cm-property">length</span> <span class="cm-operator">===</span> <span class="cm-number">0</span> 
+    <span class="cm-operator">?</span> <span class="cm-string">'won'</span>
+    : <span class="cm-variable-2">secondsLeft</span> <span class="cm-operator">===</span> <span class="cm-number">0</span> <span class="cm-operator">?</span> <span class="cm-string">'lost'</span> : <span class="cm-string">'active'</span>
+
+  <span class="cm-keyword">const</span> <span class="cm-def">numberStatus</span> <span class="cm-operator">=</span> <span class="cm-def">number</span> <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable-2">availableNums</span>.<span class="cm-property">includes</span>(<span class="cm-variable-2">number</span>)) {
+      <span class="cm-keyword">return</span> <span class="cm-string">'used'</span>;
+    }
+
+    <span class="cm-keyword">if</span> (<span class="cm-variable-2">candidateNums</span>.<span class="cm-property">includes</span>(<span class="cm-variable-2">number</span>)) {
+      <span class="cm-keyword">return</span> <span class="cm-variable-2">candidatesAreWrong</span> <span class="cm-operator">?</span> <span class="cm-string">'wrong'</span> : <span class="cm-string">'candidate'</span>;
+    }
+
+    <span class="cm-keyword">return</span> <span class="cm-string">'available'</span>;
+  };
+
+  <span class="cm-keyword">const</span> <span class="cm-def">onNumberClick</span> <span class="cm-operator">=</span> (<span class="cm-def">number</span>, <span class="cm-def">currentStatus</span>) <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">if</span> (<span class="cm-variable-2">currentStatus</span> <span class="cm-operator">===</span> <span class="cm-string">'used'</span> <span class="cm-operator">||</span> <span class="cm-variable-2">secondsLeft</span> <span class="cm-operator">===</span> <span class="cm-number">0</span>) {
+      <span class="cm-keyword">return</span>;
+    }
+
+    <span class="cm-keyword">const</span> <span class="cm-def">newCandidateNums</span> <span class="cm-operator">=</span>
+      <span class="cm-variable-2">currentStatus</span> <span class="cm-operator">===</span> <span class="cm-string">'available'</span>
+        <span class="cm-operator">?</span> <span class="cm-variable-2">candidateNums</span>.<span class="cm-property">concat</span>(<span class="cm-variable-2">number</span>)
+        : <span class="cm-variable-2">candidateNums</span>.<span class="cm-property">filter</span>(<span class="cm-def">cn</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">cn</span> <span class="cm-operator">!==</span> <span class="cm-variable-2">number</span>);
+
+    <span class="cm-variable-2">setGameState</span>(<span class="cm-variable-2">newCandidateNums</span>);
+  };
+
+  <span class="cm-keyword">return</span> (
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"game"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"help"</span><span class="cm-tag cm-bracket">&gt;</span>
+        Pick 1 or more numbers that sum to the number of stars
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"body"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"left"</span><span class="cm-tag cm-bracket">&gt;</span>
+          {<span class="cm-variable">gameStatus</span> <span class="cm-operator">!==</span> <span class="cm-string">'active'</span> <span class="cm-operator">?</span> (
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">PlayAgain</span> <span class="cm-attribute">onClick</span>={<span class="cm-variable">props</span>.<span class="cm-property">startNewGame</span>} <span class="cm-attribute">gameStatus</span>={<span class="cm-variable">gameStatus</span>} <span class="cm-tag cm-bracket">/&gt;</span>
+          ) : (
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">StarsDisplay</span> <span class="cm-attribute">count</span>={<span class="cm-variable">stars</span>} <span class="cm-tag cm-bracket">/&gt;</span>
+          )}
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"right"</span><span class="cm-tag cm-bracket">&gt;</span>
+          {<span class="cm-variable">utils</span>.<span class="cm-property">range</span>(<span class="cm-number">1</span>, <span class="cm-number">9</span>).<span class="cm-property">map</span>(<span class="cm-variable">number</span> <span class="cm-operator">=&gt;</span> (
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">PlayNumber</span>
+              <span class="cm-attribute">key</span>={<span class="cm-variable">number</span>}
+              <span class="cm-attribute">status</span>={<span class="cm-variable">numberStatus</span>(<span class="cm-variable">number</span>)}
+              <span class="cm-attribute">number</span>={<span class="cm-variable">number</span>}
+              <span class="cm-attribute">onClick</span>={<span class="cm-variable">onNumberClick</span>}
+            <span class="cm-tag cm-bracket">/&gt;</span>
+          ))}
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">className</span>=<span class="cm-string">"timer"</span><span class="cm-tag cm-bracket">&gt;</span>Time Remaining: {<span class="cm-variable">secondsLeft</span>}<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  );
+};
+
+<span class="cm-keyword">const</span> <span class="cm-def">StarMatch</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> {
+  <span class="cm-keyword">const</span> [<span class="cm-def">gameId</span>, <span class="cm-def">setGameId</span>] <span class="cm-operator">=</span> <span class="cm-variable">React</span>.<span class="cm-property">useState</span>(<span class="cm-number">1</span>);
+  <span class="cm-keyword">return</span> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Game</span> <span class="cm-attribute">key</span>={<span class="cm-variable">gameId</span>} <span class="cm-attribute">startNewGame</span>={() <span class="cm-operator">=&gt;</span> <span class="cm-variable">setGameId</span>(<span class="cm-variable">gameId</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>)}<span class="cm-tag cm-bracket">/&gt;</span>;
+}
+
+<span class="cm-comment">// Color Theme</span>
+<span class="cm-keyword">const</span> <span class="cm-def">colors</span> <span class="cm-operator">=</span> {
+  <span class="cm-property">available</span>: <span class="cm-string">'lightgray'</span>,
+  <span class="cm-property">used</span>: <span class="cm-string">'lightgreen'</span>,
+  <span class="cm-property">wrong</span>: <span class="cm-string">'lightcoral'</span>,
+  <span class="cm-property">candidate</span>: <span class="cm-string">'deepskyblue'</span>,
+};
+
+<span class="cm-comment">// Math science</span>
+<span class="cm-keyword">const</span> <span class="cm-def">utils</span> <span class="cm-operator">=</span> {
+  <span class="cm-comment">// Sum an array</span>
+  <span class="cm-property">sum</span>: (<span class="cm-def">arr</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">arr</span>.<span class="cm-property">reduce</span>((<span class="cm-def">acc</span>, <span class="cm-def">curr</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">acc</span> <span class="cm-operator">+</span> <span class="cm-variable-2">curr</span>, <span class="cm-number">0</span>),
+
+  <span class="cm-comment">// create an array of numbers between min and max (edges included)</span>
+  <span class="cm-property">range</span>: (<span class="cm-def">min</span>, <span class="cm-def">max</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable">Array</span>.<span class="cm-property">from</span>({<span class="cm-property">length</span>: <span class="cm-variable-2">max</span> <span class="cm-operator">-</span> <span class="cm-variable-2">min</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>}, (<span class="cm-def">_</span>, <span class="cm-def">i</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">min</span> <span class="cm-operator">+</span> <span class="cm-variable-2">i</span>),
+
+  <span class="cm-comment">// pick a random number between min and max (edges included)</span>
+  <span class="cm-property">random</span>: (<span class="cm-def">min</span>, <span class="cm-def">max</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">min</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">floor</span>(<span class="cm-variable">Math</span>.<span class="cm-property">random</span>() <span class="cm-operator">*</span> (<span class="cm-variable-2">max</span> <span class="cm-operator">-</span> <span class="cm-variable-2">min</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>)),
+
+  <span class="cm-comment">// Given an array of numbers and a max...</span>
+  <span class="cm-comment">// Pick a random sum (&lt; max) from the set of all available sums in arr</span>
+  <span class="cm-property">randomSumIn</span>: (<span class="cm-def">arr</span>, <span class="cm-def">max</span>) <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">const</span> <span class="cm-def">sets</span> <span class="cm-operator">=</span> [[]];
+    <span class="cm-keyword">const</span> <span class="cm-def">sums</span> <span class="cm-operator">=</span> [];
+    <span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">arr</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">j</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>, <span class="cm-def">len</span> <span class="cm-operator">=</span> <span class="cm-variable-2">sets</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">j</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">len</span>; <span class="cm-variable-2">j</span><span class="cm-operator">++</span>) {
+        <span class="cm-keyword">const</span> <span class="cm-def">candidateSet</span> <span class="cm-operator">=</span> <span class="cm-variable-2">sets</span>[<span class="cm-variable-2">j</span>].<span class="cm-property">concat</span>(<span class="cm-variable-2">arr</span>[<span class="cm-variable-2">i</span>]);
+        <span class="cm-keyword">const</span> <span class="cm-def">candidateSum</span> <span class="cm-operator">=</span> <span class="cm-variable">utils</span>.<span class="cm-property">sum</span>(<span class="cm-variable-2">candidateSet</span>);
+        <span class="cm-keyword">if</span> (<span class="cm-variable-2">candidateSum</span> <span class="cm-operator">&lt;=</span> <span class="cm-variable-2">max</span>) {
+          <span class="cm-variable-2">sets</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">candidateSet</span>);
+          <span class="cm-variable-2">sums</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">candidateSum</span>);
+        }
+      }
+    }
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">sums</span>[<span class="cm-variable">utils</span>.<span class="cm-property">random</span>(<span class="cm-number">0</span>, <span class="cm-variable-2">sums</span>.<span class="cm-property">length</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>)];
+  },
+};
+
+<span class="cm-variable">ReactDOM</span>.<span class="cm-property">render</span>(
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">StarMatch</span> <span class="cm-tag cm-bracket">/&gt;</span>,
+  <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">'root'</span>)
+);
+
+</code></pre>
+
+            <a href="https://codepen.io/EricPorter/embed/BaoWYrp?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=BaoWYrp&amp;pen-title=StarsMatchGame&amp;name=cp_embed_6#0" id="view-js-compiled-button" class="action-button bottom right view-compiled-button" data-type="js">
+              View Compiled
+            </a>
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; bluetooth *; camera *; encrypted-media *; display-capture *; geolocation *; gyroscope *; microphone *; midi *; clipboard-read *; clipboard-write *; web-share *; serial *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for StarsMatchGame" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups-to-escape-sandbox allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for StarsMatchGame" data-src="https://codepen.io/DinaTAKLIT/fullembedgrid/BaoWYrp?animations=run&amp;type=embed" src="./BaoWYrp(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener">Taklit Dina</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener" class="about-user-more">
+          See more by @DinaTAKLIT on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://unpkg.com/react/umd/react.development.js" target="_blank">https://unpkg.com/react/umd/react.development.js</a>
+        </li>
+        <li>
+          <a href="https://unpkg.com/react-dom/umd/react-dom.development.js" target="_blank">https://unpkg.com/react-dom/umd/react-dom.development.js</a>
+        </li>
+    </ol>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;","css":".game {\n  max-width: 500px;\n  margin: 0 auto;\n}\n\n.body {\n  display: flex;\n}\n\n.help {\n  color: #666;\n  margin: 10px;\n  text-align: center;\n}\n\n.left {\n  text-align: center;\n  width: 50%;\n  border: thin solid #ddd;\n}\n\n.right {\n  text-align: center;\n  padding: 10px;\n  width: 50%;\n  border: thin solid #ddd;\n}\n\n.star {\n\tdisplay: inline-block;\n  margin: 0 15px;\n}\n\n.star:after {\n  content: &quot;\\2605&quot;;\n  font-size: 45px;\n}\n\n.number {\n  background-color: #eee;\n  border: thin solid #ddd;\n  width: 45px;\n  height: 45px;\n  margin: 10px;\n  font-size: 25px;\n}\n\n.number:focus, .number:active {\n  outline: none;\n  border: thin solid #ddd;\n}\n\n.timer {\n\tcolor: #666;\n  margin-top: 3px;\n  margin-left: 3px;\n}\n\n.game-done .message {\n  font-size: 250%;\n  font-weight: bold;\n  margin: 15px;\n}","js":"const StarsDisplay = (props) =&gt; /*#__PURE__*/\nReact.createElement(React.Fragment, null,\nutils.range(1, props.count).map((starId) =&gt; /*#__PURE__*/\nReact.createElement(&quot;div&quot;, { key: starId, className: &quot;star&quot; })));\n\n\n\n\nconst PlayNumber = (props) =&gt; /*#__PURE__*/\nReact.createElement(&quot;button&quot;, {\n  className: &quot;number&quot;,\n  style: { backgroundColor: colors[props.status] },\n  onClick: () =&gt; props.onClick(props.number, props.status) },\n\nprops.number);\n\n\n\nconst PlayAgain = (props) =&gt; /*#__PURE__*/\nReact.createElement(&quot;div&quot;, { className: &quot;game-done&quot; }, /*#__PURE__*/\nReact.createElement(&quot;div&quot;, {\n  className: &quot;message&quot;,\n  style: { color: props.gameStatus === &#39;lost&#39; ? &#39;red&#39; : &#39;green&#39; } },\n\nprops.gameStatus === &#39;lost&#39; ? &#39;Game Over&#39; : &#39;Nice&#39;), /*#__PURE__*/\n\nReact.createElement(&quot;button&quot;, { onClick: props.onClick }, &quot;Play Again&quot;));\n\n\n\nconst useGameState = () =&gt; {\n  const [stars, setStars] = React.useState(utils.random(1, 9));\n  const [availableNums, setAvailableNums] = React.useState(utils.range(1, 9));\n  const [candidateNums, setCandidateNums] = React.useState([]);\n  const [secondsLeft, setSecondsLeft] = React.useState(10);\n\n  React.useEffect(() =&gt; {\n    if (secondsLeft &gt; 0 &amp;&amp; availableNums.length &gt; 0) {\n      const timerId = setTimeout(() =&gt; setSecondsLeft(secondsLeft - 1), 1000);\n      return () =&gt; clearTimeout(timerId);\n    }\n  });\n\n  const setGameState = newCandidateNums =&gt; {\n    if (utils.sum(newCandidateNums) !== stars) {\n      setCandidateNums(newCandidateNums);\n    } else {\n      const newAvailableNums = availableNums.filter(\n      n =&gt; !newCandidateNums.includes(n));\n\n      setStars(utils.randomSumIn(newAvailableNums, 9));\n      setAvailableNums(newAvailableNums);\n      setCandidateNums([]);\n    }\n  };\n\n  return { stars, availableNums, candidateNums, secondsLeft, setGameState };\n};\n\nconst Game = props =&gt; {\n  const {\n    stars,\n    availableNums,\n    candidateNums,\n    secondsLeft,\n    setGameState } =\n  useGameState();\n\n  const candidatesAreWrong = utils.sum(candidateNums) &gt; stars;\n  const gameStatus = availableNums.length === 0 ?\n  &#39;won&#39; :\n  secondsLeft === 0 ? &#39;lost&#39; : &#39;active&#39;;\n\n  const numberStatus = number =&gt; {\n    if (!availableNums.includes(number)) {\n      return &#39;used&#39;;\n    }\n\n    if (candidateNums.includes(number)) {\n      return candidatesAreWrong ? &#39;wrong&#39; : &#39;candidate&#39;;\n    }\n\n    return &#39;available&#39;;\n  };\n\n  const onNumberClick = (number, currentStatus) =&gt; {\n    if (currentStatus === &#39;used&#39; || secondsLeft === 0) {\n      return;\n    }\n\n    const newCandidateNums =\n    currentStatus === &#39;available&#39; ?\n    candidateNums.concat(number) :\n    candidateNums.filter(cn =&gt; cn !== number);\n\n    setGameState(newCandidateNums);\n  };\n\n  return /*#__PURE__*/(\n    React.createElement(&quot;div&quot;, { className: &quot;game&quot; }, /*#__PURE__*/\n    React.createElement(&quot;div&quot;, { className: &quot;help&quot; }, &quot;Pick 1 or more numbers that sum to the number of stars&quot;), /*#__PURE__*/\n\n\n    React.createElement(&quot;div&quot;, { className: &quot;body&quot; }, /*#__PURE__*/\n    React.createElement(&quot;div&quot;, { className: &quot;left&quot; },\n    gameStatus !== &#39;active&#39; ? /*#__PURE__*/\n    React.createElement(PlayAgain, { onClick: props.startNewGame, gameStatus: gameStatus }) : /*#__PURE__*/\n\n    React.createElement(StarsDisplay, { count: stars })), /*#__PURE__*/\n\n\n    React.createElement(&quot;div&quot;, { className: &quot;right&quot; },\n    utils.range(1, 9).map((number) =&gt; /*#__PURE__*/\n    React.createElement(PlayNumber, {\n      key: number,\n      status: numberStatus(number),\n      number: number,\n      onClick: onNumberClick })))), /*#__PURE__*/\n\n\n\n\n    React.createElement(&quot;div&quot;, { className: &quot;timer&quot; }, &quot;Time Remaining: &quot;, secondsLeft)));\n\n\n};\n\nconst StarMatch = () =&gt; {\n  const [gameId, setGameId] = React.useState(1);\n  return /*#__PURE__*/React.createElement(Game, { key: gameId, startNewGame: () =&gt; setGameId(gameId + 1) });\n};\n\n// Color Theme\nconst colors = {\n  available: &#39;lightgray&#39;,\n  used: &#39;lightgreen&#39;,\n  wrong: &#39;lightcoral&#39;,\n  candidate: &#39;deepskyblue&#39; };\n\n\n// Math science\nconst utils = {\n  // Sum an array\n  sum: arr =&gt; arr.reduce((acc, curr) =&gt; acc + curr, 0),\n\n  // create an array of numbers between min and max (edges included)\n  range: (min, max) =&gt; Array.from({ length: max - min + 1 }, (_, i) =&gt; min + i),\n\n  // pick a random number between min and max (edges included)\n  random: (min, max) =&gt; min + Math.floor(Math.random() * (max - min + 1)),\n\n  // Given an array of numbers and a max...\n  // Pick a random sum (&lt; max) from the set of all available sums in arr\n  randomSumIn: (arr, max) =&gt; {\n    const sets = [[]];\n    const sums = [];\n    for (let i = 0; i &lt; arr.length; i++) {if (window.CP.shouldStopExecution(0)) break;\n      for (let j = 0, len = sets.length; j &lt; len; j++) {if (window.CP.shouldStopExecution(1)) break;\n        const candidateSet = sets[j].concat(arr[i]);\n        const candidateSum = utils.sum(candidateSet);\n        if (candidateSum &lt;= max) {\n          sets.push(candidateSet);\n          sums.push(candidateSum);\n        }\n      }window.CP.exitedLoop(1);\n    }window.CP.exitedLoop(0);\n    return sums[utils.random(0, sums.length - 1)];\n  } };\n\n\nReactDOM.render( /*#__PURE__*/\nReact.createElement(StarMatch, null),\ndocument.getElementById(&#39;root&#39;));"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "babel"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "Babel"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='3kWqBfulatQ=';d.innerHTML="window.__CF$cv$params={r:'8ed92388ec2b81f9',t:'MTczMzQ1NTIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='3kWqBfulatQ=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(5).html"></iframe>
+
+</body></html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!-- saved from url=(0163)https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&theme-id=dark&default-tab=result&user=Taklit%20Dina&slug-hash=QWWEYrJ&pen-title=CardsGame&name=cp_embed_1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - CardsGame</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="2JtnmkMsOhiOPSfZG6+IVoCTPRoPn8lo05PDgBnr+s4HC/VFFzGG9n1pXsXbGAgrIyJm09xwxLHn++UaD6MeJQ==">
+
+  <link rel="stylesheet" media="all" href="./embed-ad67fe72acfeb011f9e0361df99b8dd024a995b725b6034694d1529c4f6bd5ca.css">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #111111;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #eeeeee;
+      background-color: #333333;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #555555;
+      color: #eeeeee;
+      box-shadow: inset 0px 3px #797979;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #eeeeee;
+    }
+
+    .embed-nav svg {
+      stroke: #eeeeee !important;
+    }
+  </style>
+
+  <link rel="stylesheet" media="all" href="./twilight-123214b13ed2699670d09785cc8ac3cbc46ebf6eeb43e268f0bb1a1e07c69684.css">
+
+<style id="mttstyle">
+    #mttContainer {
+      left: 0 !important;
+      top: 0 !important;
+      width: 1000px !important;
+      margin: 0px !important;
+      margin-left: -500px !important;
+      position: fixed !important;
+      z-index: 100000200 !important;
+      background: none !important;
+      pointer-events: none !important;
+      display: inline-block !important;
+      visibility: visible  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"], .tippy-content *{
+      font-size: 18px  !important;
+      text-align: center !important;
+      overflow-wrap: break-word !important;
+      color: #ffffffff !important;
+      font-family: 
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"]{
+      max-width: 200px  !important;
+      backdrop-filter: blur(6px) !important;
+      background-color: #00000080 !important;
+      border: 1px solid #ffffff00; 
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    [data-tippy-root] {
+      display: inline-block !important;
+      visibility: visible  !important;
+      position: absolute !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before { 
+      border-top-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+      border-bottom-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+      border-left-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+      border-right-color: #00000080 !important;
+    }
+    .mtt-highlight{
+      background-color: #21dc6d40  !important;
+      position: absolute !important;   
+      z-index: 100000100 !important;
+      pointer-events: none !important;
+      display: inline !important;
+      border-radius: 3px !important;
+    }
+    .mtt-image{
+      width: 180px  !important;
+      border-radius: 3px !important;
+    }
+    .ocr_text_div{
+      position: absolute;
+      opacity: 0.5;
+      color: transparent !important;
+      border: 2px solid CornflowerBlue;
+      background: none !important;
+      border-radius: 3px !important;
+    }</style><style id="mttstyleSubtitle">
+    #ytp-caption-window-container .ytp-caption-segment {
+      cursor: text !important;
+      user-select: text !important;
+      font-family: 
+      -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif  !important;
+    }
+    .caption-visual-line{
+      display: flex  !important;
+      align-items: stretch  !important;
+    }
+    .captions-text .caption-visual-line:first-of-type:after {
+      content: '⣿⣿';
+      border-radius: 3px !important;
+      color: white !important;
+      background: transparent !important;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      display: inline-block;
+      vertical-align: top;
+      opacity:0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    .ytp-caption-segment{
+      color: white !important;
+      text-shadow: 1px 1px 2px black !important;
+      background:transparent  !important;
+    }
+    .captions-text:hover .caption-visual-line:first-of-type:after {
+      opacity:1;
+    }
+    .ytp-pause-overlay {
+      display: none !important;
+    }
+    .ytp-expand-pause-overlay .caption-window {
+      display: block !important;
+    }
+  </style></head>
+
+<body id="the-body" style="border: 1px solid #666666; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=Taklit%20Dina&amp;slug-hash=QWWEYrJ&amp;pen-title=CardsGame&amp;name=cp_embed_1#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=Taklit%20Dina&amp;slug-hash=QWWEYrJ&amp;pen-title=CardsGame&amp;name=cp_embed_1#css-box" role="button" aria-pressed="false">
+              CSS
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=Taklit%20Dina&amp;slug-hash=QWWEYrJ&amp;pen-title=CardsGame&amp;name=cp_embed_1#js-box" role="button" aria-pressed="false">
+              JS
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=Taklit%20Dina&amp;slug-hash=QWWEYrJ&amp;pen-title=CardsGame&amp;name=cp_embed_1#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/Taklit%20Dina/embed/QWWEYrJ?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=Taklit%20Dina&amp;slug-hash=QWWEYrJ&amp;pen-title=CardsGame&amp;name=cp_embed_1#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/DinaTAKLIT/pen/QWWEYrJ" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">"en"</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>Cards Game<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://fonts.googleapis.com/css?family=Roboto&amp;display=swap"</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span><span class="cm-tag cm-bracket">&gt;</span>
+    
+  <span class="cm-comment">&lt;!-- Add font awsome --&gt;</span>
+   <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://kit.fontawesome.com/1d0c2e40b1.js"</span> <span class="cm-attribute">crossorigin</span>=<span class="cm-string">"anonymous"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-error">script</span><span class="cm-tag cm-bracket cm-error">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-error">head</span><span class="cm-tag cm-bracket cm-error">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span>
+
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"cards-wrapper"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fas fa-chevron-circle-left"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fas fa-chevron-circle-right"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag cm-error">html</span><span class="cm-tag cm-bracket cm-error">&gt;</span></code></pre>
+
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-tag">body</span>{
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">font-family</span>: <span class="cm-string">'Roboto'</span>, <span class="cm-atom">sans-serif</span>;
+}
+<span class="cm-comment">/************************** Card Wrapper ********************/</span>
+<span class="cm-builtin">#cards-wrapper</span>{
+    <span class="cm-property">width</span>: <span class="cm-number">500px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">600px</span>;
+    <span class="cm-property">background-color</span>: <span class="cm-atom">#c6bba5</span>; 
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">left</span>:<span class="cm-number">50%</span>;
+    <span class="cm-property">top</span>:<span class="cm-number">50%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>);
+}
+<span class="cm-comment">/****************** The left and right arrrows **************/</span>
+<span class="cm-qualifier">.fa-chevron-circle-left</span>, <span class="cm-qualifier">.fa-chevron-circle-right</span>{
+    <span class="cm-property">color</span>:<span class="cm-keyword">white</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">top</span>:<span class="cm-number">50%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">-50%</span>);
+    <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+    <span class="cm-property">padding</span>:<span class="cm-number">12px</span>;
+}
+<span class="cm-qualifier">.fa-chevron-circle-left</span>{
+    <span class="cm-property">left</span>: <span class="cm-number">10%</span>; 
+}
+<span class="cm-qualifier">.fa-chevron-circle-right</span>{
+    <span class="cm-property">right</span>: <span class="cm-number">10%</span>;
+}
+<span class="cm-comment">/***************************** The card **********************/</span>
+<span class="cm-qualifier">.card</span>{
+    <span class="cm-property">width</span>:<span class="cm-number">250</span>;
+    <span class="cm-property">height</span>:<span class="cm-number">430px</span>;
+    <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>; 
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">left</span>:<span class="cm-number">50%</span>;
+    <span class="cm-property">top</span>:<span class="cm-number">50%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>); 
+    <span class="cm-property">background-color</span>: <span class="cm-keyword">white</span>;
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">box-shadow</span>:<span class="cm-number">0</span> <span class="cm-number">12px</span> <span class="cm-number">16px</span> <span class="cm-number">0</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">39</span>,<span class="cm-number">39</span>,<span class="cm-number">47</span>,<span class="cm-number">0.06</span>);  
+    <span class="cm-comment">/** this for the slider**/</span>
+    <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+}
+<span class="cm-comment">/*** 1st Part : The poster***/</span>
+<span class="cm-qualifier">.poster-wrapper</span>{
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">190px</span>;
+    <span class="cm-property">border-top-right-radius</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">border-top-left-radius</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">background-image</span>: <span class="cm-variable cm-callee">url</span>(<span class="cm-string">"https://i.ibb.co/zfB0wN3/card-bg.jpg"</span>);
+    <span class="cm-property">background-size</span>: <span class="cm-atom">cover</span>;
+}
+<span class="cm-qualifier">.poster-wrapper</span> <span class="cm-tag">img</span>{
+    <span class="cm-property">max-width</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">135%</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">top</span>:<span class="cm-number">18%</span>;
+    <span class="cm-property">left</span>:<span class="cm-number">45%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>); 
+}
+<span class="cm-comment">/**** 2nd part : The description ****************/</span>
+<span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">h6</span>,<span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">h3</span>, <span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">p</span>{
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+}
+<span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">h6</span>{
+    <span class="cm-property">margin-top</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">color</span>: <span class="cm-atom">#EC9B3B</span>;
+    <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">10px</span>; 
+}
+<span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">h3</span>{
+    <span class="cm-property">margin-top</span>: <span class="cm-number">2px</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">20px</span>;
+}
+<span class="cm-qualifier">.descrption-wrapper</span> <span class="cm-tag">p</span>{
+    <span class="cm-property">margin-top</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">0</span> <span class="cm-number">15px</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">color</span>: <span class="cm-keyword">gray</span>;
+}
+<span class="cm-comment">/*** 3rd Part: Thec card' footer **/</span>
+<span class="cm-qualifier">.statistics-wrapper</span>{
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">80px</span>;
+    <span class="cm-property">border-bottom-right-radius</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">border-bottom-left-radius</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">color</span>: <span class="cm-keyword">white</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">bottom</span>:<span class="cm-number">0</span>;
+    <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;   
+    <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>; 
+    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+}
+<span class="cm-qualifier">.statistics-wrapper</span> <span class="cm-tag">div</span>{
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+    <span class="cm-property">flex-direction</span>: <span class="cm-atom">column</span>;
+    <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-qualifier">.statistics-wrapper</span> <span class="cm-qualifier">.stat-number</span>{
+    <span class="cm-property">font-weight</span>: <span class="cm-number">600</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">18px</span>;
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+}
+<span class="cm-qualifier">.statistics-wrapper</span> <span class="cm-qualifier">.stat-label</span>{
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">10px</span>;
+    <span class="cm-property">margin-top</span>: <span class="cm-number">3px</span>;  
+}
+
+<span class="cm-comment">/** Create the verstical line between the values of strength,speed and cost.***/</span>
+<span class="cm-builtin">#card1</span>{  
+    <span class="cm-property">background-color</span>: <span class="cm-atom">#EC9B3B</span>;   
+}
+<span class="cm-builtin">#card1</span> <span class="cm-tag">div</span>{
+    <span class="cm-property">border-right</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#BD7C2F</span>;
+    <span class="cm-property">border-left</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#BD7C2F</span>;  
+}
+<span class="cm-builtin">#card2</span>{
+    <span class="cm-property">background-color</span>: <span class="cm-atom">#4FACFF</span>;   
+}
+<span class="cm-builtin">#card2</span> <span class="cm-tag">div</span>{
+    <span class="cm-property">border-right</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#2b80cc</span>;
+    <span class="cm-property">border-left</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#2b80cc</span>;  
+}
+<span class="cm-builtin">#card3</span>{
+    <span class="cm-property">background-color</span>: <span class="cm-atom">#78ad29</span>;
+}
+<span class="cm-builtin">#card3</span> <span class="cm-tag">div</span>{
+    <span class="cm-property">border-right</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#69a11a</span>;
+    <span class="cm-property">border-left</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#69a11a</span>;  
+}
+<span class="cm-comment">/*Remove the vertical line(border) from the from strngthtleft) and cost(right)*/</span>
+<span class="cm-builtin">#card1</span> :<span class="cm-variable-3">first-of-type</span>, <span class="cm-builtin">#card2</span> :<span class="cm-variable-3">first-of-type</span>,<span class="cm-builtin">#card3</span> :<span class="cm-variable-3">first-of-type</span>{
+    <span class="cm-property">border-left</span>: <span class="cm-atom">none</span>;
+}
+<span class="cm-builtin">#card1</span> :<span class="cm-variable-3">last-of-type</span>, <span class="cm-builtin">#card2</span> :<span class="cm-variable-3">last-of-type</span>, <span class="cm-builtin">#card3</span> :<span class="cm-variable-3">last-of-type</span>{
+    <span class="cm-property">border-right</span>: <span class="cm-atom">none</span>; 
+}
+
+
+<span class="cm-comment">/********************* Rotation Center*********************/</span>
+
+<span class="cm-qualifier">.rotate-center</span> {
+  <span class="cm-meta">-webkit-</span><span class="cm-property">animation</span>: <span class="cm-variable">rotate-center</span> <span class="cm-number">0.6s</span> <span class="cm-atom">ease-in-out</span> <span class="cm-atom">both</span>;
+          <span class="cm-property">animation</span>: <span class="cm-variable">rotate-center</span> <span class="cm-number">0.6s</span> <span class="cm-atom">ease-in-out</span> <span class="cm-atom">both</span>;
+}
+ <span class="cm-def">@-webkit-keyframes</span> <span class="cm-variable">rotate-center</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>; 
+        <span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;   
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">translateX</span>(<span class="cm-number">-100%</span>); 
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>)
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;  
+        <span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;  
+
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">360deg</span>); 
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">360deg</span>) <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>);    
+    }
+  }
+  <span class="cm-def">@keyframes</span> <span class="cm-variable">rotate-center</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-comment">/* Those two lines + translate(-50%,-50%) were added to remain same position absolute */</span>
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>; 
+        <span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;   
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">translateX</span>(<span class="cm-number">-100%</span>); 
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>);       
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;  
+        <span class="cm-property">transform-origin</span>: <span class="cm-atom">left</span> <span class="cm-atom">top</span>;  
+        <span class="cm-meta">-webkit-</span><span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">360deg</span>); 
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">360deg</span>) <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>,<span class="cm-number">-50%</span>);      
+    }
+  }</code></pre>
+
+        </div>
+
+
+
+        <div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">// Get the cards wrappert element to append the cards later</span>
+<span class="cm-keyword">var</span> <span class="cm-def">cards_wrapper</span><span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">"#cards-wrapper"</span>);
+<span class="cm-comment">// To create many object create</span>
+<span class="cm-keyword">function</span> <span class="cm-def">Card</span>(<span class="cm-def">poster</span>,<span class="cm-def">level</span>,<span class="cm-def">name</span>,<span class="cm-def">description</span>,<span class="cm-def">strength</span>,<span class="cm-def">speed</span>,<span class="cm-def">cost</span>){
+  <span class="cm-keyword">this</span>.<span class="cm-property">poster</span><span class="cm-operator">=</span><span class="cm-variable-2">poster</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">level</span><span class="cm-operator">=</span> <span class="cm-variable-2">level</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">name</span><span class="cm-operator">=</span><span class="cm-variable-2">name</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">description</span><span class="cm-operator">=</span><span class="cm-variable-2">description</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">strength</span><span class="cm-operator">=</span><span class="cm-variable-2">strength</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">speed</span><span class="cm-operator">=</span><span class="cm-variable-2">speed</span>;
+  <span class="cm-keyword">this</span>.<span class="cm-property">cost</span><span class="cm-operator">=</span><span class="cm-variable-2">cost</span>;
+}
+<span class="cm-comment">// Create 1st card object</span>
+<span class="cm-keyword">var</span> <span class="cm-def">card1</span><span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Card</span>(<span class="cm-string">'https://i.ibb.co/fxjbHD0/1.png'</span>,<span class="cm-number">4</span>,<span class="cm-string">'The Barbarien'</span>,<span class="cm-string">'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.'</span>,<span class="cm-number">20</span>,<span class="cm-number">16</span>,<span class="cm-number">250</span>);
+
+<span class="cm-comment">// Create 2nd card object</span>
+<span class="cm-keyword">var</span> <span class="cm-def">card2</span><span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Card</span>(<span class="cm-string">'https://i.ibb.co/ypGVjzF/2.png'</span>,<span class="cm-number">5</span>,<span class="cm-string">'The Knight'</span>,<span class="cm-string">'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.'</span>,<span class="cm-number">25</span>,<span class="cm-number">19</span>,<span class="cm-number">300</span>);
+
+<span class="cm-comment">// Create 3rd card object</span>
+<span class="cm-keyword">var</span> <span class="cm-def">card3</span><span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Card</span>(<span class="cm-string">'https://i.ibb.co/rQkMNt2/3.png'</span>,<span class="cm-number">7</span>,<span class="cm-string">'The Giant'</span>,<span class="cm-string">'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.'</span>,<span class="cm-number">35</span>,<span class="cm-number">12</span>,<span class="cm-number">2250</span>);
+
+<span class="cm-keyword">function</span> <span class="cm-def">createCard</span>(<span class="cm-def">card</span>,<span class="cm-def">id</span>){
+  <span class="cm-comment">// create the card using innerHTML. I found the way here : http://garystorey.com/2017/02/27/three-ways-to-create-dom-elements-without-jquery/</span>
+  <span class="cm-keyword">var</span> <span class="cm-def">cardElement</span><span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">'div'</span>);
+  <span class="cm-keyword">var</span> <span class="cm-def">cardString</span><span class="cm-operator">=</span>
+  <span class="cm-string">'&lt;div class="card rotate-center"&gt;'</span><span class="cm-operator">+</span>
+  <span class="cm-string">'&lt;div class="poster-wrapper"&gt;'</span><span class="cm-operator">+</span> 
+      <span class="cm-string">'&lt;img src='</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">poster</span><span class="cm-operator">+</span><span class="cm-string">'&gt;'</span><span class="cm-operator">+</span>   
+  <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+  <span class="cm-string">'&lt;div class="descrption-wrapper"&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;h6&gt;level'</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">level</span><span class="cm-operator">+</span><span class="cm-string">'&lt;/h6&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;h3&gt;'</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">name</span><span class="cm-operator">+</span><span class="cm-string">'&lt;/h3&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;p&gt;'</span><span class="cm-operator">+</span> <span class="cm-variable-2">card</span>.<span class="cm-property">description</span><span class="cm-operator">+</span>     
+      <span class="cm-string">'&lt;/p&gt;'</span><span class="cm-operator">+</span>
+  <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+  <span class="cm-string">'&lt;div id="card'</span><span class="cm-operator">+</span><span class="cm-variable-2">id</span><span class="cm-operator">+</span><span class="cm-string">'" class="statistics-wrapper"&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;div&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-number"&gt;'</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">strength</span><span class="cm-operator">+</span><span class="cm-string">'&lt;/p&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-label"&gt;STRENGTH&lt;/p&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;div&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-number"&gt;'</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">speed</span><span class="cm-operator">+</span><span class="cm-string">'&lt;/p&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-label"&gt;speed&lt;/p&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;div&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-number"&gt;'</span><span class="cm-operator">+</span><span class="cm-variable-2">card</span>.<span class="cm-property">cost</span><span class="cm-operator">+</span><span class="cm-string">'&lt;/p&gt;'</span><span class="cm-operator">+</span>
+          <span class="cm-string">'&lt;p class="stat-label"&gt;cost&lt;/p&gt;'</span><span class="cm-operator">+</span>
+      <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+  <span class="cm-string">'&lt;/div&gt;'</span><span class="cm-operator">+</span>
+<span class="cm-string">'&lt;/div&gt;'</span>;
+<span class="cm-variable-2">cardElement</span>.<span class="cm-property">innerHTML</span><span class="cm-operator">=</span><span class="cm-variable-2">cardString</span>;
+<span class="cm-variable">cards_wrapper</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable-2">cardElement</span>.<span class="cm-property">firstChild</span>);
+  <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">cards_wrapper</span>,<span class="cm-number">1</span>);
+}
+<span class="cm-comment">// Create the 03 cards html elemnts using createCard() function</span>
+<span class="cm-variable">createCard</span>(<span class="cm-variable">card1</span>,<span class="cm-number">1</span>);
+<span class="cm-variable">createCard</span>(<span class="cm-variable">card2</span>,<span class="cm-number">2</span>);
+<span class="cm-variable">createCard</span>(<span class="cm-variable">card3</span>,<span class="cm-number">3</span>);
+
+
+<span class="cm-comment">/***************** The slider **************/</span>
+<span class="cm-keyword">var</span> <span class="cm-def">leftBtn</span><span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".fa-chevron-circle-left"</span>);
+<span class="cm-keyword">var</span> <span class="cm-def">rightBtn</span><span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".fa-chevron-circle-right"</span>);
+
+<span class="cm-variable">leftBtn</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>(){
+    <span class="cm-variable">plusSlides</span>(<span class="cm-operator">-</span><span class="cm-number">1</span>);
+});
+<span class="cm-variable">rightBtn</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>(){
+    <span class="cm-variable">plusSlides</span>(<span class="cm-number">1</span>);
+});
+<span class="cm-keyword">var</span> <span class="cm-def">slideIndex</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;
+<span class="cm-variable">showSlides</span>(<span class="cm-variable">slideIndex</span>);
+
+<span class="cm-comment">// Next/previous controls</span>
+<span class="cm-keyword">function</span> <span class="cm-def">plusSlides</span>(<span class="cm-def">n</span>) {
+  <span class="cm-variable">showSlides</span>(<span class="cm-variable">slideIndex</span> <span class="cm-operator">+=</span> <span class="cm-variable-2">n</span>);
+}
+
+<span class="cm-keyword">function</span> <span class="cm-def">showSlides</span>(<span class="cm-def">n</span>) {
+  <span class="cm-keyword">var</span> <span class="cm-def">i</span>;
+  <span class="cm-keyword">var</span> <span class="cm-def">slides</span> <span class="cm-operator">=</span>  <span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">".card"</span>);
+  <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">slides</span>);
+  <span class="cm-keyword">if</span> (<span class="cm-variable-2">n</span> <span class="cm-operator">&gt;</span> <span class="cm-variable-2">slides</span>.<span class="cm-property">length</span>) {<span class="cm-variable">slideIndex</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>}
+  <span class="cm-keyword">if</span> (<span class="cm-variable-2">n</span> <span class="cm-operator">&lt;</span> <span class="cm-number">1</span>) {<span class="cm-variable">slideIndex</span> <span class="cm-operator">=</span> <span class="cm-variable-2">slides</span>.<span class="cm-property">length</span>}
+  <span class="cm-keyword">for</span> (<span class="cm-variable-2">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">slides</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-variable-2">slides</span>[<span class="cm-variable-2">i</span>].<span class="cm-property">style</span>.<span class="cm-property">display</span> <span class="cm-operator">=</span> <span class="cm-string">"none"</span>;
+  }
+  <span class="cm-variable-2">slides</span>[<span class="cm-variable">slideIndex</span><span class="cm-operator">-</span><span class="cm-number">1</span>].<span class="cm-property">style</span>.<span class="cm-property">display</span> <span class="cm-operator">=</span> <span class="cm-string">"block"</span>;
+}
+<span class="cm-comment">/************************************************************/</span></code></pre>
+
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; bluetooth *; camera *; encrypted-media *; display-capture *; geolocation *; gyroscope *; microphone *; midi *; clipboard-read *; clipboard-write *; web-share *; serial *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for CardsGame" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups-to-escape-sandbox allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for CardsGame" data-src="https://codepen.io/DinaTAKLIT/fullembedgrid/QWWEYrJ?animations=run&amp;type=embed" src="./QWWEYrJ(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener">Taklit Dina</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener" class="about-user-more">
+          See more by @DinaTAKLIT on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <p>
+      This Pen doesn't use any external JavaScript resources.
+    </p>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n&lt;head&gt;\n    &lt;title&gt;Cards Game&lt;/title&gt;\n    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;\n    \n  &lt;!-- Add font awsome --&gt;\n   &lt;script src=&quot;https://kit.fontawesome.com/1d0c2e40b1.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;/script&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n    &lt;div id=&quot;cards-wrapper&quot;&gt;\n        &lt;i class=&quot;fas fa-chevron-circle-left&quot;&gt;&lt;/i&gt;\n        &lt;i class=&quot;fas fa-chevron-circle-right&quot;&gt;&lt;/i&gt;\n    &lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;","css":"body{\n    margin: 0;\n    font-family: &#39;Roboto&#39;, sans-serif;\n}\n/************************** Card Wrapper ********************/\n#cards-wrapper{\n    width: 500px;\n    height: 600px;\n    background-color: #c6bba5; \n    position: absolute;\n    left:50%;\n    top:50%;\n    transform: translate(-50%,-50%);\n}\n/****************** The left and right arrrows **************/\n.fa-chevron-circle-left, .fa-chevron-circle-right{\n    color:white;\n    position: absolute;\n    top:50%;\n    transform: translateY(-50%);\n    cursor: pointer;\n    padding:12px;\n}\n.fa-chevron-circle-left{\n    left: 10%; \n}\n.fa-chevron-circle-right{\n    right: 10%;\n}\n/***************************** The card **********************/\n.card{\n    width:250;\n    height:430px;\n    box-sizing: border-box; \n    position: absolute;\n    left:50%;\n    top:50%;\n    transform: translate(-50%,-50%); \n    background-color: white;\n    text-align: center;\n    border-radius: 20px;\n    box-shadow:0 12px 16px 0 rgba(39,39,47,0.06);  \n    /** this for the slider**/\n    display: none;\n}\n/*** 1st Part : The poster***/\n.poster-wrapper{\n    width: 100%;\n    height: 190px;\n    border-top-right-radius: 20px;\n    border-top-left-radius: 20px;\n    background-image: url(&quot;https://i.ibb.co/zfB0wN3/card-bg.jpg&quot;);\n    background-size: cover;\n}\n.poster-wrapper img{\n    max-width: none;\n    width: 135%;\n    position: absolute;\n    top:18%;\n    left:45%;\n    transform: translate(-50%,-50%); \n}\n/**** 2nd part : The description ****************/\n.descrption-wrapper h6,.descrption-wrapper h3, .descrption-wrapper p{\n    margin: 0;\n}\n.descrption-wrapper h6{\n    margin-top: 20px;\n    color: #EC9B3B;\n    text-transform: uppercase;\n    font-size: 10px; \n}\n.descrption-wrapper h3{\n    margin-top: 2px;\n    font-size: 20px;\n}\n.descrption-wrapper p{\n    margin-top: 12px;\n    padding: 0 15px;\n    font-size: 12px;\n    color: gray;\n}\n/*** 3rd Part: Thec card&#39; footer **/\n.statistics-wrapper{\n    width: 100%;\n    height: 80px;\n    border-bottom-right-radius: 20px;\n    border-bottom-left-radius: 20px;\n    color: white;\n    position: absolute;\n    bottom:0;\n    box-sizing: border-box;   \n    text-transform: uppercase; \n    display: flex;\n}\n.statistics-wrapper div{\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n}\n\n.statistics-wrapper .stat-number{\n    font-weight: 600;\n    font-size: 18px;\n    margin: 0;\n}\n.statistics-wrapper .stat-label{\n    margin: 0;\n    font-size: 10px;\n    margin-top: 3px;  \n}\n\n/** Create the verstical line between the values of strength,speed and cost.***/\n#card1{  \n    background-color: #EC9B3B;   \n}\n#card1 div{\n    border-right: 1px solid #BD7C2F;\n    border-left: 1px solid #BD7C2F;  \n}\n#card2{\n    background-color: #4FACFF;   \n}\n#card2 div{\n    border-right: 1px solid #2b80cc;\n    border-left: 1px solid #2b80cc;  \n}\n#card3{\n    background-color: #78ad29;\n}\n#card3 div{\n    border-right: 1px solid #69a11a;\n    border-left: 1px solid #69a11a;  \n}\n/*Remove the vertical line(border) from the from strngthtleft) and cost(right)*/\n#card1 :first-of-type, #card2 :first-of-type,#card3 :first-of-type{\n    border-left: none;\n}\n#card1 :last-of-type, #card2 :last-of-type, #card3 :last-of-type{\n    border-right: none; \n}\n\n\n/********************* Rotation Center*********************/\n\n.rotate-center {\n\t-webkit-animation: rotate-center 0.6s ease-in-out both;\n\t        animation: rotate-center 0.6s ease-in-out both;\n}\n @-webkit-keyframes rotate-center {\n    0% {\n        -webkit-transform-origin: left top; \n        transform-origin: left top;   \n        -webkit-transform: rotate(0) translateX(-100%); \n        transform: rotate(0) translate(-50%,-50%)\n    }\n    100% {\n        -webkit-transform-origin: left top;  \n        transform-origin: left top;  \n\n        -webkit-transform: rotate(360deg); \n        transform: rotate(360deg) translate(-50%,-50%);    \n    }\n  }\n  @keyframes rotate-center {\n    0% {\n        /* Those two lines + translate(-50%,-50%) were added to remain same position absolute */\n        -webkit-transform-origin: left top; \n        transform-origin: left top;   \n        -webkit-transform: rotate(0) translateX(-100%); \n        transform: rotate(0) translate(-50%,-50%);       \n    }\n    100% {\n        -webkit-transform-origin: left top;  \n        transform-origin: left top;  \n        -webkit-transform: rotate(360deg); \n        transform: rotate(360deg) translate(-50%,-50%);      \n    }\n  }","js":"// Get the cards wrappert element to append the cards later\nvar cards_wrapper = document.querySelector(&quot;#cards-wrapper&quot;);\n// To create many object create\nfunction Card(poster, level, name, description, strength, speed, cost) {\n  this.poster = poster;\n  this.level = level;\n  this.name = name;\n  this.description = description;\n  this.strength = strength;\n  this.speed = speed;\n  this.cost = cost;\n}\n// Create 1st card object\nvar card1 = new Card(&#39;https://i.ibb.co/fxjbHD0/1.png&#39;, 4, &#39;The Barbarien&#39;, &#39;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.&#39;, 20, 16, 250);\n\n// Create 2nd card object\nvar card2 = new Card(&#39;https://i.ibb.co/ypGVjzF/2.png&#39;, 5, &#39;The Knight&#39;, &#39;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.&#39;, 25, 19, 300);\n\n// Create 3rd card object\nvar card3 = new Card(&#39;https://i.ibb.co/rQkMNt2/3.png&#39;, 7, &#39;The Giant&#39;, &#39;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nemo, aliquid, molestias fugiat.&#39;, 35, 12, 2250);\n\nfunction createCard(card, id) {\n  // create the card using innerHTML. I found the way here : http://garystorey.com/2017/02/27/three-ways-to-create-dom-elements-without-jquery/\n  var cardElement = document.createElement(&#39;div&#39;);\n  var cardString =\n  &#39;&lt;div class=&quot;card rotate-center&quot;&gt;&#39; +\n  &#39;&lt;div class=&quot;poster-wrapper&quot;&gt;&#39; +\n  &#39;&lt;img src=&#39; + card.poster + &#39;&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;div class=&quot;descrption-wrapper&quot;&gt;&#39; +\n  &#39;&lt;h6&gt;level&#39; + card.level + &#39;&lt;/h6&gt;&#39; +\n  &#39;&lt;h3&gt;&#39; + card.name + &#39;&lt;/h3&gt;&#39; +\n  &#39;&lt;p&gt;&#39; + card.description +\n  &#39;&lt;/p&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;div id=&quot;card&#39; + id + &#39;&quot; class=&quot;statistics-wrapper&quot;&gt;&#39; +\n  &#39;&lt;div&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-number&quot;&gt;&#39; + card.strength + &#39;&lt;/p&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-label&quot;&gt;STRENGTH&lt;/p&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;div&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-number&quot;&gt;&#39; + card.speed + &#39;&lt;/p&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-label&quot;&gt;speed&lt;/p&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;div&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-number&quot;&gt;&#39; + card.cost + &#39;&lt;/p&gt;&#39; +\n  &#39;&lt;p class=&quot;stat-label&quot;&gt;cost&lt;/p&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;/div&gt;&#39; +\n  &#39;&lt;/div&gt;&#39;;\n  cardElement.innerHTML = cardString;\n  cards_wrapper.appendChild(cardElement.firstChild);\n  console.log(cards_wrapper, 1);\n}\n// Create the 03 cards html elemnts using createCard() function\ncreateCard(card1, 1);\ncreateCard(card2, 2);\ncreateCard(card3, 3);\n\n\n/***************** The slider **************/\nvar leftBtn = document.querySelector(&quot;.fa-chevron-circle-left&quot;);\nvar rightBtn = document.querySelector(&quot;.fa-chevron-circle-right&quot;);\n\nleftBtn.addEventListener(&#39;click&#39;, function () {\n  plusSlides(-1);\n});\nrightBtn.addEventListener(&#39;click&#39;, function () {\n  plusSlides(1);\n});\nvar slideIndex = 1;\nshowSlides(slideIndex);\n\n// Next/previous controls\nfunction plusSlides(n) {\n  showSlides(slideIndex += n);\n}\n\nfunction showSlides(n) {\n  var i;\n  var slides = document.querySelectorAll(&quot;.card&quot;);\n  console.log(slides);\n  if (n &gt; slides.length) {slideIndex = 1;}\n  if (n &lt; 1) {slideIndex = slides.length;}\n  for (i = 0; i &lt; slides.length; i++) {if (window.CP.shouldStopExecution(0)) break;\n    slides[i].style.display = &quot;none&quot;;\n  }window.CP.exitedLoop(0);\n  slides[slideIndex - 1].style.display = &quot;block&quot;;\n}\n/************************************************************/"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='kRjnem/x6PI=';d.innerHTML="window.__CF$cv$params={r:'8ed92388dc0381f9',t:'MTczMzQ1NTIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='kRjnem/x6PI=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
+
+</body></html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+  
+
+  <title>ProfileCard</title>
+
+    <link rel="canonical" href="https://codepen.io/DinaTAKLIT/pen/vYKYYzV">
+  
+  
+  <link rel="stylesheet" href="./bootstrap(1).min.css">
+<link rel="stylesheet" href="./all.css">
+  
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.profile-card-wrapper .profile-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  transition: all 0.25s ease;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.profile-card-wrapper .profile-card:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+.profile-card-wrapper .profile-card .card-header {
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(0deg, #2e2f39, #F50057);
+  border: none;
+}
+.profile-card-wrapper .profile-card .card-header .profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.profile-card-wrapper .profile-card .card-header .profile-name {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.profile-card-wrapper .profile-card .card-header .profile-role {
+  font-size: 1.05rem;
+  color: #DDD;
+}
+.profile-card-wrapper .profile-card .card-header .profile-location {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+.profile-card-wrapper .profile-card .card-header .profile-location i {
+  padding-right: 0.3rem;
+}
+.profile-card-wrapper .profile-card .card-header .divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.profile-card-wrapper .profile-card .card-header .divider svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.5px);
+  height: 50px;
+}
+.profile-card-wrapper .profile-card .card-header .divider svg path {
+  fill: #fff;
+}
+.profile-card-wrapper .profile-card .card-body {
+  padding: 2rem;
+}
+.profile-card-wrapper .profile-card .card-body .title {
+  color: #495057;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.profile-card-wrapper .profile-card .card-body .contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li {
+  display: inline-block;
+}
+.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li a {
+  color: #343a40;
+  background: #fff;
+  width: 3rem;
+  height: 3rem;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 1.3rem;
+  margin: 1.1rem 0.5rem 1rem 0.5rem;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: #d73d4e;
+  color: white;
+}
+.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li a:hover {
+  background-color: #F50057;
+  color: #fff;
+}
+.profile-card-wrapper .profile-card .profile-action {
+  display: flex;
+}
+.profile-card-wrapper .profile-card .profile-action .btn {
+  border-radius: 0;
+  border: 1px solid #d02b3d;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+}
+
+.btn-common {
+  background-color: #d73d4e;
+}
+.btn-common:hover {
+  color: #fff;
+  background: #F50057;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-large {
+  width: 100%;
+}
+</style>
+
+  
+  
+  
+<style id="mttstyle">
+    #mttContainer {
+      left: 0 !important;
+      top: 0 !important;
+      width: 1000px !important;
+      margin: 0px !important;
+      margin-left: -500px !important;
+      position: fixed !important;
+      z-index: 100000200 !important;
+      background: none !important;
+      pointer-events: none !important;
+      display: inline-block !important;
+      visibility: visible  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"], .tippy-content *{
+      font-size: 18px  !important;
+      text-align: center !important;
+      overflow-wrap: break-word !important;
+      color: #ffffffff !important;
+      font-family: 
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"]{
+      max-width: 200px  !important;
+      backdrop-filter: blur(6px) !important;
+      background-color: #00000080 !important;
+      border: 1px solid #ffffff00; 
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    [data-tippy-root] {
+      display: inline-block !important;
+      visibility: visible  !important;
+      position: absolute !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before { 
+      border-top-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+      border-bottom-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+      border-left-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+      border-right-color: #00000080 !important;
+    }
+    .mtt-highlight{
+      background-color: #21dc6d40  !important;
+      position: absolute !important;   
+      z-index: 100000100 !important;
+      pointer-events: none !important;
+      display: inline !important;
+      border-radius: 3px !important;
+    }
+    .mtt-image{
+      width: 180px  !important;
+      border-radius: 3px !important;
+    }
+    .ocr_text_div{
+      position: absolute;
+      opacity: 0.5;
+      color: transparent !important;
+      border: 2px solid CornflowerBlue;
+      background: none !important;
+      border-radius: 3px !important;
+    }</style><style id="mttstyleSubtitle">
+    #ytp-caption-window-container .ytp-caption-segment {
+      cursor: text !important;
+      user-select: text !important;
+      font-family: 
+      -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif  !important;
+    }
+    .caption-visual-line{
+      display: flex  !important;
+      align-items: stretch  !important;
+    }
+    .captions-text .caption-visual-line:first-of-type:after {
+      content: '⣿⣿';
+      border-radius: 3px !important;
+      color: white !important;
+      background: transparent !important;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      display: inline-block;
+      vertical-align: top;
+      opacity:0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    .ytp-caption-segment{
+      color: white !important;
+      text-shadow: 1px 1px 2px black !important;
+      background:transparent  !important;
+    }
+    .captions-text:hover .caption-visual-line:first-of-type:after {
+      opacity:1;
+    }
+    .ytp-pause-overlay {
+      display: none !important;
+    }
+    .ytp-expand-pause-overlay .caption-window {
+      display: block !important;
+    }
+  </style></head>
+
+<body translate="no">
+  <div class="container">
+    <div class="profile-card-wrapper col-lg-6 md-6 sm-12">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <img class="profile-image image-fluid" src="./default(1).png" alt="profile image">
+                            <div class="profile-name">Dina TAKLIT</div>
+                            <div class="profile-role">Web Developer</div>
+                            <div class="profile-location"><i class="fas fa-map-marker-alt"></i>Setif, Algeria (willed to relocate)</div>
+                            <div class="divider">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="contacts">
+                                <div class="title">Contacts</div>
+                                <div class="contact-list">
+                                    <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                                        <li>
+                                            <a class="linkedin" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                          <a class="facebook" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed#"><i class="fab fa-github-alt"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed#"><i class="fab fa-stack-overflow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed#"><i class="fab fa-codepen"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-action">
+                            <a class="btn btn-large btn-common" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed">Contact Me</a>
+                            <a class="btn btn-large btn-common" href="https://cdpn.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+  </div>
+  <script src="./jquery-3.5.1.slim.min.j"></script>
+<script src="./popper.min.js.download"></script>
+<script src="./bootstrap.min(1).js.download"></script>
+  
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

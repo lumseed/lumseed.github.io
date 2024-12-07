@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- saved from url=(0159)https://codepen.io/EricPorter/embed/vYKYYzV?height=350&theme-id=dark&default-tab=result&user=EricPorter&slug-hash=vYKYYzV&pen-title=ProfileCard&name=cp_embed_4 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - ProfileCard</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="zSVCjpofHTHTuesIH9KMMqQE28o/5rKsnUY73btKMccStdBRzgKh3yDtkhTfZQxPB7WAA+wJv3WpLh1HrQLVLA==">
+
+  <link rel="stylesheet" media="all" href="./embed-ad67fe72acfeb011f9e0361df99b8dd024a995b725b6034694d1529c4f6bd5ca.css">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #111111;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #eeeeee;
+      background-color: #333333;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #555555;
+      color: #eeeeee;
+      box-shadow: inset 0px 3px #797979;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #eeeeee;
+    }
+
+    .embed-nav svg {
+      stroke: #eeeeee !important;
+    }
+  </style>
+
+  <link rel="stylesheet" media="all" href="./twilight-123214b13ed2699670d09785cc8ac3cbc46ebf6eeb43e268f0bb1a1e07c69684.css">
+
+<style id="mttstyle">
+    #mttContainer {
+      left: 0 !important;
+      top: 0 !important;
+      width: 1000px !important;
+      margin: 0px !important;
+      margin-left: -500px !important;
+      position: fixed !important;
+      z-index: 100000200 !important;
+      background: none !important;
+      pointer-events: none !important;
+      display: inline-block !important;
+      visibility: visible  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"], .tippy-content *{
+      font-size: 18px  !important;
+      text-align: center !important;
+      overflow-wrap: break-word !important;
+      color: #ffffffff !important;
+      font-family: 
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif  !important;
+      white-space: pre-line;
+    }
+    .tippy-box[data-theme~="custom"]{
+      max-width: 200px  !important;
+      backdrop-filter: blur(6px) !important;
+      background-color: #00000080 !important;
+      border: 1px solid #ffffff00; 
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    [data-tippy-root] {
+      display: inline-block !important;
+      visibility: visible  !important;
+      position: absolute !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before { 
+      border-top-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+      border-bottom-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+      border-left-color: #00000080 !important;
+    }
+    .tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+      border-right-color: #00000080 !important;
+    }
+    .mtt-highlight{
+      background-color: #21dc6d40  !important;
+      position: absolute !important;   
+      z-index: 100000100 !important;
+      pointer-events: none !important;
+      display: inline !important;
+      border-radius: 3px !important;
+    }
+    .mtt-image{
+      width: 180px  !important;
+      border-radius: 3px !important;
+    }
+    .ocr_text_div{
+      position: absolute;
+      opacity: 0.5;
+      color: transparent !important;
+      border: 2px solid CornflowerBlue;
+      background: none !important;
+      border-radius: 3px !important;
+    }</style><style id="mttstyleSubtitle">
+    #ytp-caption-window-container .ytp-caption-segment {
+      cursor: text !important;
+      user-select: text !important;
+      font-family: 
+      -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif  !important;
+    }
+    .caption-visual-line{
+      display: flex  !important;
+      align-items: stretch  !important;
+    }
+    .captions-text .caption-visual-line:first-of-type:after {
+      content: '⣿⣿';
+      border-radius: 3px !important;
+      color: white !important;
+      background: transparent !important;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      display: inline-block;
+      vertical-align: top;
+      opacity:0;
+      transition: opacity 0.7s ease-in-out;
+    }
+    .ytp-caption-segment{
+      color: white !important;
+      text-shadow: 1px 1px 2px black !important;
+      background:transparent  !important;
+    }
+    .captions-text:hover .caption-visual-line:first-of-type:after {
+      opacity:1;
+    }
+    .ytp-pause-overlay {
+      display: none !important;
+    }
+    .ytp-expand-pause-overlay .caption-window {
+      display: block !important;
+    }
+  </style></head>
+
+<body id="the-body" style="border: 1px solid #666666; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/EricPorter/embed/vYKYYzV?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=vYKYYzV&amp;pen-title=ProfileCard&amp;name=cp_embed_4#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/EricPorter/embed/vYKYYzV?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=vYKYYzV&amp;pen-title=ProfileCard&amp;name=cp_embed_4#css-box" role="button" aria-pressed="false">
+              SCSS
+          </a>
+        </li>
+
+
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/EricPorter/embed/vYKYYzV?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=vYKYYzV&amp;pen-title=ProfileCard&amp;name=cp_embed_4#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/EricPorter/embed/vYKYYzV?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=vYKYYzV&amp;pen-title=ProfileCard&amp;name=cp_embed_4#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/DinaTAKLIT/pen/vYKYYzV" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-card-wrapper col-lg-6 md-6 sm-12"</span><span class="cm-tag cm-bracket">&gt;</span>
+                    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-card"</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"card-header"</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">img</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-image image-fluid"</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://assets.codepen.io/1703508/internal/avatars/users/default.png"</span> <span class="cm-attribute">alt</span>=<span class="cm-string">"profile image"</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-name"</span><span class="cm-tag cm-bracket">&gt;</span>Dina TAKLIT<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-role"</span><span class="cm-tag cm-bracket">&gt;</span>Web Developer<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-location"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fas fa-map-marker-alt"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span>Setif, Algeria (willed to relocate)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"divider"</span><span class="cm-tag cm-bracket">&gt;</span>
+                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">svg</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"Layer 1"</span> <span class="cm-attribute">xmlns</span>=<span class="cm-string">"http://www.w3.org/2000/svg"</span> <span class="cm-attribute">viewBox</span>=<span class="cm-string">"0 0 1200 120"</span> <span class="cm-attribute">preserveAspectRatio</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">&gt;</span>
+                                    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">path</span><span class="cm-tag cm-bracket">&gt;</span>
+                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">svg</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"card-body"</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"contacts"</span><span class="cm-tag cm-bracket">&gt;</span>
+                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"title"</span><span class="cm-tag cm-bracket">&gt;</span>Contacts<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"contact-list"</span><span class="cm-tag cm-bracket">&gt;</span>
+                                    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">class</span>=<span class="cm-string">"social-icon wow fadeInUp"</span> <span class="cm-attribute">data-wow-delay</span>=<span class="cm-string">"0.8s"</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"linkedin"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fab fa-linkedin-in"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"facebook"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fab fa-facebook-f"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"facebook"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fab fa-github-alt"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"facebook"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fab fa-stack-overflow"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"facebook"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">i</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fab fa-codepen"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">i</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>
+                                    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span>
+                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"profile-action"</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"btn btn-large btn-common"</span> <span class="cm-attribute">href</span>=<span class="cm-string">""</span><span class="cm-tag cm-bracket">&gt;</span>Contact Me<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"btn btn-large btn-common"</span> <span class="cm-attribute">href</span>=<span class="cm-string">""</span><span class="cm-tag cm-bracket">&gt;</span>Portfolio<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://fonts.googleapis.com/css2?family=Lato&amp;display=swap'</span>);
+<span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://fonts.googleapis.com/css2?family=Courgette&amp;display=swap'</span>);
+
+<span class="cm-comment">// Override Bootstrap typography variables</span>
+<span class="cm-variable-2">$font-family-base</span>: <span class="cm-string">'Raleway'</span>, <span class="cm-atom">sans-serif</span>;
+
+<span class="cm-variable-2">$headings-font-family</span>: <span class="cm-string">'Lato'</span>, <span class="cm-atom">sans-serif</span>;
+
+<span class="cm-variable-2">$font-family-script</span>:
+
+<span class="cm-string">'Courgette'</span>, <span class="cm-atom">cursive</span>;
+
+<span class="cm-variable-2">$red</span>: <span class="cm-atom">#d73d4e</span>;
+<span class="cm-variable-2">$red-hover</span>: <span class="cm-atom">#F50057</span>;
+<span class="cm-variable-2">$dark-gray</span>: <span class="cm-atom">#2c303a</span>;
+<span class="cm-variable-2">$dark-blue</span>: <span class="cm-atom">#2e2f39</span>;
+<span class="cm-variable-2">$darker-blue</span>:<span class="cm-atom">#191b21</span>;   
+<span class="cm-variable-2">$white</span>: <span class="cm-atom">#fff</span> <span class="cm-keyword">!default</span>;
+<span class="cm-variable-2">$gray-800</span>: <span class="cm-atom">#343a40</span> <span class="cm-keyword">!default</span>;
+<span class="cm-variable-2">$gray-700</span>: <span class="cm-atom">#495057</span> <span class="cm-keyword">!default</span>;
+
+<span class="cm-variable-2">$primary</span>: <span class="cm-variable-2">$red</span>;
+<span class="cm-variable-2">$primary-hover</span>: <span class="cm-variable-2">$red-hover</span>;
+
+
+
+*,
+*::<span class="cm-variable-3">after</span>,
+*::<span class="cm-variable-3">before</span>{
+    <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+}
+<span class="cm-tag">html</span>{
+    <span class="cm-property">font-size</span>: <span class="cm-number">12px</span>;
+}
+<span class="cm-tag">body</span> {
+    <span class="cm-property">overflow-x</span>: <span class="cm-atom">hidden</span>;
+    <span class="cm-property">font-family</span>: <span class="cm-variable-2">$font-family-base</span>;
+}
+
+<span class="cm-tag">h1</span>,
+<span class="cm-tag">h2</span>,
+<span class="cm-tag">h3</span>,
+<span class="cm-tag">h4</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">3rem</span>;
+  <span class="cm-property">font-weight</span>: <span class="cm-number">700</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-variable-2">$headings-font-family</span>;
+}
+
+<span class="cm-qualifier">.container</span>{
+  <span class="cm-property">display</span>:<span class="cm-atom">flex</span>;
+  <span class="cm-property">align-items</span>:<span class="cm-atom">center</span>;
+  <span class="cm-property">justify-content</span>:<span class="cm-atom">center</span>;
+  <span class="cm-property">margin-top</span>: <span class="cm-number">3rem</span>;
+}
+<span class="cm-qualifier">.profile-card-wrapper</span>{
+
+        <span class="cm-qualifier">.profile-card</span> {
+            <span class="cm-property">max-width</span>: <span class="cm-number">400px</span>;
+            <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-atom">auto</span>;
+            <span class="cm-property">background-color</span>: <span class="cm-variable-2">$white</span>;
+            <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.25s</span> <span class="cm-atom">ease</span>;
+            <span class="cm-property">box-shadow</span>: <span class="cm-number">0px</span> <span class="cm-number">2px</span> <span class="cm-number">2px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">.15</span>);
+            &amp;:<span class="cm-variable-3">hover</span> {
+                <span class="cm-property">box-shadow</span>: <span class="cm-number">0px</span> <span class="cm-number">5px</span> <span class="cm-number">20px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">.15</span>);
+            }
+
+            <span class="cm-qualifier">.card-header</span> {
+                <span class="cm-property">border-radius</span>: <span class="cm-number">.5rem</span>;
+                <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+                <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+                <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+                <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+                <span class="cm-property">flex-direction</span>: <span class="cm-atom">column</span>;
+                <span class="cm-property">padding</span>: <span class="cm-number">2rem</span>;
+                <span class="cm-property">color</span>: <span class="cm-variable-2">$white</span>;
+                <span class="cm-property">background</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">0deg</span>, <span class="cm-variable-2">$dark-blue</span>,<span class="cm-variable-2">$red-hover</span>);
+                <span class="cm-comment">// background: linear-gradient(135deg,#3f5efb, #fc466b);</span>
+                <span class="cm-property">border</span>: <span class="cm-atom">none</span>;
+                <span class="cm-qualifier">.profile-image</span> {
+                    <span class="cm-property">width</span>: <span class="cm-number">120px</span>;
+                    <span class="cm-property">height</span>: <span class="cm-number">120px</span>;
+                    <span class="cm-property">object-fit</span>: <span class="cm-atom">cover</span>;
+                    <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+                    <span class="cm-property">border</span>: <span class="cm-number">5px</span> <span class="cm-atom">solid</span> <span class="cm-keyword">white</span>;
+                }
+
+                <span class="cm-qualifier">.profile-name</span> {
+                    <span class="cm-property">margin-top</span>: <span class="cm-number">.5rem</span>;
+                    <span class="cm-property">font-size</span>: <span class="cm-number">2rem</span>;
+                    <span class="cm-property">font-weight</span>: <span class="cm-number">700</span>;
+                }
+
+                <span class="cm-qualifier">.profile-role</span> {
+                    <span class="cm-property">font-size</span>: <span class="cm-number">1.05rem</span>;
+                    <span class="cm-property">color</span>: <span class="cm-atom">#DDD</span>;
+                }
+
+                <span class="cm-qualifier">.profile-location</span>{
+                    <span class="cm-property">margin-top</span>: <span class="cm-number">.5rem</span>;
+                    <span class="cm-property">margin-bottom</span>: <span class="cm-number">2rem</span>;
+                    <span class="cm-property">font-size</span>: <span class="cm-number">1.25rem</span>;
+                    <span class="cm-tag">i</span>{
+                        <span class="cm-property">padding-right</span>: <span class="cm-number">.3rem</span>;
+                    }
+                }
+
+                <span class="cm-qualifier">.divider</span> {
+                    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+                    <span class="cm-property">bottom</span>: <span class="cm-number">0</span>;
+                    <span class="cm-property">left</span>: <span class="cm-number">0</span>;
+                    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+                    <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+                    <span class="cm-property">line-height</span>: <span class="cm-number">0</span>;
+                    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">180deg</span>);
+
+                    <span class="cm-tag">svg</span> {
+                        <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+                        <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+                        <span class="cm-property">width</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-number">150%</span> + <span class="cm-number">1.5px</span>);
+                        <span class="cm-property">height</span>: <span class="cm-number">50px</span>;
+
+                        <span class="cm-tag">path</span> {
+                            <span class="cm-property">fill</span>: <span class="cm-variable-2">$white</span>;
+                        }
+                    }
+                }
+            }
+
+            <span class="cm-qualifier">.card-body</span> {
+                <span class="cm-property">padding</span>: <span class="cm-number">2rem</span>;
+
+                <span class="cm-qualifier">.title</span> {
+                    <span class="cm-property">color</span>: <span class="cm-variable-2">$gray-700</span>;
+                    <span class="cm-property">margin-bottom</span>: <span class="cm-number">1rem</span>;
+                    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+                    <span class="cm-property">font-size</span>: <span class="cm-number">1.05rem</span>;
+                    <span class="cm-property">font-weight</span>: <span class="cm-number">700</span>;
+                    <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+                }
+
+                <span class="cm-qualifier">.contact-list</span> {
+                    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+                    <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+                    <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+                    <span class="cm-qualifier">.social-icon</span>{
+                        <span class="cm-tag">li</span>{
+                            <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+                            <span class="cm-tag">a</span>{
+                                <span class="cm-property">color</span>: <span class="cm-variable-2">$gray-800</span>;
+                                <span class="cm-property">background</span>: <span class="cm-variable-2">$white</span>;
+                                <span class="cm-property">width</span>: <span class="cm-number">3rem</span>;
+                                <span class="cm-property">height</span>: <span class="cm-number">3rem</span>;
+                                <span class="cm-property">line-height</span>: <span class="cm-number">38px</span>;
+                                <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+                                <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+                                <span class="cm-property">border-radius</span>: <span class="cm-number">100%</span>;
+                                <span class="cm-property">font-size</span>: <span class="cm-number">1.3rem</span>;
+                                <span class="cm-property">margin</span>: <span class="cm-number">1.1rem</span> <span class="cm-number">.5rem</span> <span class="cm-number">1rem</span> <span class="cm-number">.5rem</span>;
+                                <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.3s</span> <span class="cm-atom">ease-in-out</span> <span class="cm-number">0s</span>;
+                                <span class="cm-property">background-color</span>: <span class="cm-variable-2">$primary</span>;
+                                <span class="cm-property">color</span>: <span class="cm-keyword">white</span>;
+                                &amp;:<span class="cm-variable-3">hover</span>{
+                                    <span class="cm-property">background-color</span>: <span class="cm-variable-2">$red-hover</span>;
+                                    <span class="cm-property">color</span>: <span class="cm-variable-2">$white</span>;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            <span class="cm-qualifier">.profile-action</span>{
+                <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+                <span class="cm-qualifier">.btn</span>{
+                    <span class="cm-comment">// background-color: $dark-blue;</span>
+                    <span class="cm-property">border-radius</span>: <span class="cm-number">0</span>;
+                    <span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">darken</span>(<span class="cm-variable-2">$color</span>: <span class="cm-variable-2">$primary</span>, <span class="cm-variable-2">$amount</span>: <span class="cm-number">5</span>);
+                }
+            }
+        }
+    }
+
+
+
+
+
+<span class="cm-comment">// Button Styles</span>
+<span class="cm-qualifier">.btn</span> {
+    <span class="cm-property">font-size</span>: <span class="cm-number">1.25rem</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">.7rem</span> <span class="cm-number">2rem</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">0px</span>;
+    <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+    <span class="cm-property">font-family</span>: <span class="cm-variable-2">$headings-font-family</span>;
+    <span class="cm-property">font-weight</span>: <span class="cm-number">400</span>;
+    <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">4px</span>;
+    <span class="cm-property">text-transform</span>: <span class="cm-atom">capitalize</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.2s</span> <span class="cm-atom">linear</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+}
+
+<span class="cm-qualifier">.btn</span>:<span class="cm-variable-3">focus</span>,
+<span class="cm-qualifier">.btn</span>:<span class="cm-variable-3">active</span> {
+  <span class="cm-property">box-shadow</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+}
+
+
+<span class="cm-qualifier">.btn-common</span>{
+    <span class="cm-property">background-color</span>: <span class="cm-variable-2">$primary</span>;
+    &amp;:<span class="cm-variable-3">hover</span>{
+      <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+      <span class="cm-property">background</span>: <span class="cm-variable-2">$red-hover</span>;
+      <span class="cm-property">box-shadow</span>:  <span class="cm-number">0</span> <span class="cm-number">6px</span> <span class="cm-number">22px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0.1</span>);
+      <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.2s</span> <span class="cm-atom">ease-in-out</span>;
+    }
+}
+<span class="cm-qualifier">.btn-large</span>{
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+}
+</code></pre>
+
+            <a href="https://codepen.io/EricPorter/embed/vYKYYzV?height=350&amp;theme-id=dark&amp;default-tab=result&amp;user=EricPorter&amp;slug-hash=vYKYYzV&amp;pen-title=ProfileCard&amp;name=cp_embed_4#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+              View Compiled
+            </a>
+        </div>
+
+
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; bluetooth *; camera *; encrypted-media *; display-capture *; geolocation *; gyroscope *; microphone *; midi *; clipboard-read *; clipboard-write *; web-share *; serial *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for ProfileCard" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups-to-escape-sandbox allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for ProfileCard" data-src="https://codepen.io/DinaTAKLIT/fullembedgrid/vYKYYzV?animations=run&amp;type=embed" src="./vYKYYzV(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener">Taklit Dina</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/DinaTAKLIT" target="_blank" rel="noopener" class="about-user-more">
+          See more by @DinaTAKLIT on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" target="_blank">https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css</a>
+        </li>
+        <li>
+          <a href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" target="_blank">https://pro.fontawesome.com/releases/v5.10.0/css/all.css</a>
+        </li>
+    </ol>
+
+  <h3>External JavaScript</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://code.jquery.com/jquery-3.5.1.slim.min.j" target="_blank">https://code.jquery.com/jquery-3.5.1.slim.min.j</a>
+        </li>
+        <li>
+          <a href="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" target="_blank">https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js</a>
+        </li>
+        <li>
+          <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" target="_blank">https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js</a>
+        </li>
+    </ol>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;container&quot;&gt;\n    &lt;div class=&quot;profile-card-wrapper col-lg-6 md-6 sm-12&quot;&gt;\n                    &lt;div class=&quot;profile-card&quot;&gt;\n                        &lt;div class=&quot;card-header&quot;&gt;\n                            &lt;img class=&quot;profile-image image-fluid&quot; src=&quot;https://assets.codepen.io/1703508/internal/avatars/users/default.png&quot; alt=&quot;profile image&quot;&gt;\n                            &lt;div class=&quot;profile-name&quot;&gt;Dina TAKLIT&lt;/div&gt;\n                            &lt;div class=&quot;profile-role&quot;&gt;Web Developer&lt;/div&gt;\n                            &lt;div class=&quot;profile-location&quot;&gt;&lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt;Setif, Algeria (willed to relocate)&lt;/div&gt;\n                            &lt;div class=&quot;divider&quot;&gt;\n                                &lt;svg data-name=&quot;Layer 1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;&gt;\n                                    &lt;path d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot;&gt;&lt;/path&gt;\n                                &lt;/svg&gt;\n                            &lt;/div&gt;\n                        &lt;/div&gt;\n                        &lt;div class=&quot;card-body&quot;&gt;\n                            &lt;div class=&quot;contacts&quot;&gt;\n                                &lt;div class=&quot;title&quot;&gt;Contacts&lt;/div&gt;\n                                &lt;div class=&quot;contact-list&quot;&gt;\n                                    &lt;ul class=&quot;social-icon wow fadeInUp&quot; data-wow-delay=&quot;0.8s&quot;&gt;\n                                        &lt;li&gt;\n                                            &lt;a class=&quot;linkedin&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                                        &lt;/li&gt;\n                                        &lt;li&gt;\n                                          &lt;a class=&quot;facebook&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                                        &lt;/li&gt;\n                                        &lt;li&gt;\n                                            &lt;a class=&quot;facebook&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-github-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                                        &lt;/li&gt;\n                                        &lt;li&gt;\n                                            &lt;a class=&quot;facebook&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-stack-overflow&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                                        &lt;/li&gt;\n                                        &lt;li&gt;\n                                            &lt;a class=&quot;facebook&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-codepen&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                                        &lt;/li&gt;\n                                    &lt;/ul&gt;\n                                &lt;/div&gt;\n                            &lt;/div&gt;\n                        &lt;/div&gt;\n                        &lt;div class=&quot;profile-action&quot;&gt;\n                            &lt;a class=&quot;btn btn-large btn-common&quot; href=&quot;&quot;&gt;Contact Me&lt;/a&gt;\n                            &lt;a class=&quot;btn btn-large btn-common&quot; href=&quot;&quot;&gt;Portfolio&lt;/a&gt;\n                        &lt;/div&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n  &lt;/div&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css2?family=Lato&amp;display=swap&quot;);\n@import url(&quot;https://fonts.googleapis.com/css2?family=Courgette&amp;display=swap&quot;);\n*,\n*::after,\n*::before {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nhtml {\n  font-size: 12px;\n}\n\nbody {\n  overflow-x: hidden;\n  font-family: &quot;Raleway&quot;, sans-serif;\n}\n\nh1,\nh2,\nh3,\nh4 {\n  font-size: 3rem;\n  font-weight: 700;\n  font-family: &quot;Lato&quot;, sans-serif;\n}\n\n.container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 3rem;\n}\n\n.profile-card-wrapper .profile-card {\n  max-width: 400px;\n  margin: 0 auto;\n  background-color: #fff;\n  transition: all 0.25s ease;\n  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);\n}\n.profile-card-wrapper .profile-card:hover {\n  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);\n}\n.profile-card-wrapper .profile-card .card-header {\n  border-radius: 0.5rem;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  padding: 2rem;\n  color: #fff;\n  background: linear-gradient(0deg, #2e2f39, #F50057);\n  border: none;\n}\n.profile-card-wrapper .profile-card .card-header .profile-image {\n  width: 120px;\n  height: 120px;\n  object-fit: cover;\n  border-radius: 50%;\n  border: 5px solid white;\n}\n.profile-card-wrapper .profile-card .card-header .profile-name {\n  margin-top: 0.5rem;\n  font-size: 2rem;\n  font-weight: 700;\n}\n.profile-card-wrapper .profile-card .card-header .profile-role {\n  font-size: 1.05rem;\n  color: #DDD;\n}\n.profile-card-wrapper .profile-card .card-header .profile-location {\n  margin-top: 0.5rem;\n  margin-bottom: 2rem;\n  font-size: 1.25rem;\n}\n.profile-card-wrapper .profile-card .card-header .profile-location i {\n  padding-right: 0.3rem;\n}\n.profile-card-wrapper .profile-card .card-header .divider {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  overflow: hidden;\n  line-height: 0;\n  transform: rotate(180deg);\n}\n.profile-card-wrapper .profile-card .card-header .divider svg {\n  position: relative;\n  display: block;\n  width: calc(150% + 1.5px);\n  height: 50px;\n}\n.profile-card-wrapper .profile-card .card-header .divider svg path {\n  fill: #fff;\n}\n.profile-card-wrapper .profile-card .card-body {\n  padding: 2rem;\n}\n.profile-card-wrapper .profile-card .card-body .title {\n  color: #495057;\n  margin-bottom: 1rem;\n  text-align: center;\n  font-size: 1.05rem;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.profile-card-wrapper .profile-card .card-body .contact-list {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li {\n  display: inline-block;\n}\n.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li a {\n  color: #343a40;\n  background: #fff;\n  width: 3rem;\n  height: 3rem;\n  line-height: 38px;\n  display: block;\n  text-align: center;\n  border-radius: 100%;\n  font-size: 1.3rem;\n  margin: 1.1rem 0.5rem 1rem 0.5rem;\n  transition: all 0.3s ease-in-out 0s;\n  background-color: #d73d4e;\n  color: white;\n}\n.profile-card-wrapper .profile-card .card-body .contact-list .social-icon li a:hover {\n  background-color: #F50057;\n  color: #fff;\n}\n.profile-card-wrapper .profile-card .profile-action {\n  display: flex;\n}\n.profile-card-wrapper .profile-card .profile-action .btn {\n  border-radius: 0;\n  border: 1px solid #d02b3d;\n}\n\n.btn {\n  font-size: 1.25rem;\n  padding: 0.7rem 2rem;\n  border-radius: 0px;\n  cursor: pointer;\n  font-family: &quot;Lato&quot;, sans-serif;\n  font-weight: 400;\n  color: #fff;\n  border-radius: 4px;\n  text-transform: capitalize;\n  transition: all 0.2s linear;\n  display: inline-block;\n}\n\n.btn:focus,\n.btn:active {\n  box-shadow: none;\n  outline: none;\n  color: #fff;\n}\n\n.btn-common {\n  background-color: #d73d4e;\n}\n.btn-common:hover {\n  color: #fff;\n  background: #F50057;\n  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);\n  transition: all 0.2s ease-in-out;\n}\n\n.btn-large {\n  width: 100%;\n}","js":""};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='4/JDNbcz3hs=';d.innerHTML="window.__CF$cv$params={r:'8ed92388ec2681f9',t:'MTczMzQ1NTIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='4/JDNbcz3hs=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(3).html"></iframe>
+
+</body></html>
