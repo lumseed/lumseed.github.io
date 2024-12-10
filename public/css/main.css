@@ -465,7 +465,7 @@ video[poster] {
 }
 
 #about {
-    background: url("./../assets/img/about.jpg") center top no-repeat fixed;
+    /* background: url("./../assets/img/about.jpg") center top no-repeat fixed; */
     color: #495057;
     background-size: cover;
     position: relative
@@ -727,7 +727,7 @@ video[poster] {
 }
 
 #skills {
-    background: url("./../assets/img/skills.jpg") center top no-repeat fixed;
+    /* background: url("./../assets/img/skills.jpg") center top no-repeat fixed; */
     color: #495057;
     background-size: cover;
     position: relative
@@ -1467,21 +1467,21 @@ video[poster] {
 }
 
 #portfolio .projects-wrapper #project1 {
-    background-image: url("./assets/img/portfolio/1.png")
+    background-image: url("../assets/img/portfolio/1.png")
 }
 
 #portfolio .projects-wrapper #project2 {
-    background-image: url("./assets/img/portfolio/2.png")
+    background-image: url("../assets/img/portfolio/2.png")
 }
 
 #portfolio .projects-wrapper #project3 {
-    background-image: url("./assets/img/portfolio/3.png")
+    background-image: url("../assets/img/portfolio/3.png")
 }
 
 #portfolio .projects-wrapper #project4 {
-    background-image: url("./assets/img/portfolio/4.png")
+    background-image: url("../assets/img/portfolio/4.png")
 }
-
+/* 
 #portfolio .projects-wrapper #project5:hover {
     -webkit-animation-duration: 1s;
     animation-duration: 1s
@@ -1516,7 +1516,7 @@ video[poster] {
 #portfolio .projects-wrapper #project9:hover {
     -webkit-animation-duration: 8s;
     animation-duration: 8s
-}
+} */
 
 #pens {
     min-height: 100vh;
